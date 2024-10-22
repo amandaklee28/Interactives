@@ -1,0 +1,39 @@
+.centertext {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background-image: url("mila.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#leftsection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+#factssection {
+  margin-left: 50px;
+  
+}
+#image {
+  border-radius: 62% 38% 25% 75% / 55% 63% 37% 45%;
+  display: flex;
+  margin-left: 60px;
+}
+
+#thingsaboutme {
+align-items: flex-start
+
+}
+
