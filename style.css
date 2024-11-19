@@ -1,39 +1,254 @@
-.centertext {
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-  }
+@font-face {
+  font-family: poopFont;
+  src: url(Poppins-SemiBold.ttf);
+}
 
-body {
+* {
+  font-family: poopFont;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbaroptions {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+
+.whoiam {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  line-height: 90px;
+  /* background-color: blue; */
+  height: 200px;
+  width: 500px; 
+  width: 100%;
+}
+
+.imastudent {
+  font-size: 96px;
+  color: white;
+  width: 500px;
+  height: 100px;
+  /* background-color: green; */
+}
+
+.bodyhome {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* background-image: url("mila.jpg"); */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.methodbody {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: 40px;
-    background-image: url("mila.jpg");
+    /* background-image: url("mila.jpg"); */
+    /* background-color: white; */
+    background: linear-gradient(to bottom, #f8f8f8, #333333);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+}
+
+.storybody {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.interactivesbody {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #232429;
+  height: 100%;
+  width: 100%;
+}
+
+#hi {
+  color:white;
+  font-size: 24px;
+  height: 60px;
+  width: 200px;
+  margin: 0;
+  /* background-color: red; */
 }
 
 #leftsection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+  row-gap: 10px;
 }
 
-#factssection {
-  margin-left: 50px;
-  
+#methodleftsection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  padding-right: 50px;
+  width: 100%;
 }
+
+#viewmymap {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  padding: 12px;
+  border-radius: 15px;
+  margin-top: 20px;
+  transition: .5s;
+  height: 20px;
+}
+
+#viewmymap:hover {
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+#viewmymaptext {
+  color: white;
+  transition: .5s;
+}
+
+#viewmymaptext:hover {
+  color: black;
+  transition: .5s;
+}
+
 #image {
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  border-style: solid;
+  border-width: 3px;
+  overflow: hidden;
+  border-color: white;
   border-radius: 62% 38% 25% 75% / 55% 63% 37% 45%;
   display: flex;
-  margin-left: 60px;
 }
 
-#thingsaboutme {
-align-items: flex-start
+.flourish-embed {
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
 
+#heatmapimage {
+ height: 80%;
+ width: 80%;
+}
+
+.bargraph {
+  height: 100%;
+  width: 100%;
+}
+
+
+#thingsaboutme {
+  align-items: flex-start;
+  color: white;
+  /* background-color: green; */
+  width: 500px;
+}
+
+#methodlist {
+  align-items: flex-start;
+  color: black;
+  /* background-color: green; */
+  width: 100%;
+}
+
+.content {
+  width: 100vw;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  column-gap: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mymethods {
+  font-size: 96px;
+  color: black;
+  width: 2000px;
+  height: 150px;
+  width: 100%;
+}
+
+.contentplan {
+  font-size: 96px;
+  color: white;
+  width: 2000px;
+  height: 150px;
+  width: 100%;
+  
+}
+
+.contentplantext {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+  padding-right: 90px
+}
+
+.contentplanleftsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    padding-right: 50px;
+    width: 100%;
+}
+
+#citylink {
+  color: blue;
+  text-decoration-line: underline;
+}
+
+#citylink:hover {
+  color: darkblue
 }
 
