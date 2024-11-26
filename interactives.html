@@ -10,46 +10,74 @@
 
 <body class="interactivesbody">
 
-<div class=navbarspace>
+    <div class="navbar" >
+        <nav>
 
-</div>
-
-
-</div>
-
-<div class="navbar" >
-    <nav>
-
-      <a class="navbaroptions" style="color: white" href="./index.html">Home</a>
-      <a class="navbaroptions" style="color: white" href="./interactives.html">Interactives</a>
-      <a class="navbaroptions" style="color: white" href="./methods.html">Methods</a>
-      <a class="navbaroptions" style="color: white" href="./story.html">What I Learned</a>
-    </nav>
-  </div>
-
-
-
-    <div class="flourish-embed flourish-map" data-src="visualisation/20149305">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-        <noscript>
-            <img
-                src="https://public.flourish.studio/visualisation/20149305/thumbnail" width="100%"
-                alt="map visualization" 
-            />
-        </noscript>
+        <a class="navbaroptions" style="color: white" href="./index1.html">Home</a>
+        <a class="navbaroptions" style="color: white" href="./interactives.html">Interactives</a>
+        <a class="navbaroptions" style="color: white" href="./methods.html">Methods</a>
+        </nav>
     </div>
 
-    <div class="bargraph">
-        <div class="flourish-embed flourish-chart" data-src="visualisation/20149888">
-        <script src="https://public.flourish.studio/resources/embed.js" ></script>
-        <noscript>
-            <img
-                src="https://public.flourish.studio/visualisation/20149888/thumbnail" width="100%"
-                alt="chart visualization"
-            />
-        </noscript>
+    <div class="content">
+
+        <div class="interactives"> INTERACTIVES</div>
+
+        <div id="heatmapdescription" style="font-family: 'Times New Roman'">
+            I am a student learning to develop interactives that tell comprehensive stories. 
+            This map visualizes park density across the Chicago area. Warmer colors indicate a higher concentration of parks, while cooler tones represent fewer parks. 
+            Using data from the Chicago Park District Facilities, I filtered by park type and location, then uploaded the dataset to Flourish to show density of parks in certain areas of Chicago. 
+            I added community area boundaries with a GeoJSON file to provide additional context.
+        </div>
+        
+        <div> <a id="spreadsheet" target="_blank" href="https://docs.google.com/spreadsheets/d/11tH6L-cmjg2Gvw6IwvveMQ-9X53ioTqD5O51WqhtgVs/edit?usp=sharing"> Chicago Park District Facilities Data </a> </div>
+
+
+
+
+
+        <div style="display: flex; width: 100%; justify-content: center; margin-top: 20px;">
+            <div style="width: 70%">
+                <div class="flourish-embed flourish-map" data-src="visualisation/20149305">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img
+                            src="https://public.flourish.studio/visualisation/20149305/thumbnail" width="100%"
+                            alt="map visualization" 
+                        />
+                    </noscript>
+                </div>
+            </div>
+        </div>
+
+        <div id="bargraphdescription" style="font-family: 'Times New Roman'">
+            For this visualization, I created a bar graph highlighting the top 20 park types in Chicago. 
+            To achieve this, I used a pivot table to aggregate the data, counting the total number of each park type and sorting them from greatest to least.
+        </div>
+
+        <div style="display: flex; width: 100%; justify-content: center; margin-top: 20px;">
+            <div style="width: 70%">
+                <div class="bargraph">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/20149888">
+                    <script src="https://public.flourish.studio/resources/embed.js" ></script>
+                    <noscript>
+                        <img
+                            src="https://public.flourish.studio/visualisation/20149888/thumbnail" width="100%"
+                            alt="chart visualization"
+                        />
+                    </noscript>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="youtubedescription" style="font-family: 'Times New Roman'"> This YouTube video is a taste of what the neighborhood park faciltiies are like in Chicago. On May 1, 1934, the 22 independent park districts that existed in the city of Chicago consolidated to become one, the Chicago Park District. The newly formed Park District inherited 130+ parks, including 83 fieldhouses, 13 beaches, 5 golf courses, and 50 swimming pools. </div>
+
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bcOS3In_qLo?si=8FOQzZkiAAtoCzcr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+
     </div>
 
- 
- 
 </body>

@@ -38,18 +38,13 @@ a:hover {
   align-items: flex-start;
   color: white;
   line-height: 90px;
-  /* background-color: blue; */
   height: 200px;
-  width: 500px; 
-  width: 100%;
 }
 
 .imastudent {
-  font-size: 96px;
+  font-size: 6.5vw;
   color: white;
-  width: 500px;
   height: 100px;
-  /* background-color: green; */
 }
 
 .bodyhome {
@@ -59,24 +54,20 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
   /* background-image: url("mila.jpg"); */
-  background-color: black;
+  background-color: #232429;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 
 .methodbody {
-    display: flex;
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* background-image: url("mila.jpg"); */
-    /* background-color: white; */
-    background: linear-gradient(to bottom, #f8f8f8, #333333);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #232429;
+  overflow-x: hidden;
 }
 
 .storybody {
@@ -97,6 +88,8 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   background-color: #232429;
+  overflow-x: hidden;
+  padding-top: 20px;
   height: 100%;
   width: 100%;
 }
@@ -107,14 +100,6 @@ a:hover {
   height: 60px;
   width: 200px;
   margin: 0;
-  /* background-color: red; */
-}
-
-#leftsection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 10px;
 }
 
 #methodleftsection {
@@ -135,7 +120,7 @@ a:hover {
   border-style: solid;
   padding: 12px;
   border-radius: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
   transition: .5s;
   height: 20px;
 }
@@ -157,9 +142,6 @@ a:hover {
 }
 
 #image {
-  position: absolute;
-  bottom: 80px;
-  right: 150px;
   border-style: solid;
   border-width: 3px;
   overflow: hidden;
@@ -169,9 +151,14 @@ a:hover {
 }
 
 .flourish-embed {
-  height: 100%;
+  /* border: solid; */
+  justify-content: center;
+  border-color: white;
+}
+
+.flourish-map {
   width: 100%;
-  margin-top: 100px;
+  height: 100%;
 }
 
 #heatmapimage {
@@ -188,33 +175,47 @@ a:hover {
 #thingsaboutme {
   align-items: flex-start;
   color: white;
-  /* background-color: green; */
-  width: 500px;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 #methodlist {
   align-items: flex-start;
-  color: black;
+  color: white;
   /* background-color: green; */
   width: 100%;
 }
 
 .content {
-  width: 100vw;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  column-gap: 100px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.homecontent {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 10px;
 }
 
 .mymethods {
-  font-size: 96px;
-  color: black;
+  font-size: 70px;
+  color: white;
   width: 2000px;
-  height: 150px;
   width: 100%;
+  display: flex;
 }
 
 .contentplan {
@@ -235,20 +236,68 @@ a:hover {
 }
 
 .contentplanleftsection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 10px;
-    padding-right: 50px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  padding-right: 50px;
+  width: 100%;
 }
 
 #citylink {
-  color: blue;
+  color: lightblue;
   text-decoration-line: underline;
 }
 
 #citylink:hover {
-  color: darkblue
+  color: rgb(113, 176, 214)
 }
 
+#spreadsheet {
+  color: lightblue;
+  text-decoration-line: underline;
+}
+
+#spreadsheet:hover {
+  color: rgb(113, 176, 214)
+}
+
+#heatmapdescription {
+  justify-content:center;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  width: 97%;
+}
+
+#bargraphdescription {
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  width: 97%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.interactives {
+  font-size: 70px;
+  color: white;
+  width: 2000px;
+  width: 100%;
+  display: flex;
+}
+
+#youtubedescription {
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  width: 97%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#leftsection {
+  width: 50%;
+}
